@@ -32,10 +32,10 @@ PRODUCT_SYSTEM_NAME := raven
 PRODUCT_SYSTEM_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 13 TQ1A.221205.011 9244662 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TQ2A.230305.008.F1 9680964 release-keys"
 
 # defined in vendor/google_devices/raven/proprietary/device-vendor.mk
-BUILD_FINGERPRINT := google/raven/raven:13/TQ1A.221205.011/9244662:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TQ2A.230305.008.F1/9680964:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
