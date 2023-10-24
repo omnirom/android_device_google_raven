@@ -47,11 +47,22 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# HBM
+PRODUCT_COPY_FILES += \
+    device/google/raviole/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
+
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
+
 # euicc from stock
 PRODUCT_COPY_FILES += \
     device/google/raviole/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.google.android.euicc.xml
 
-# sysconfig from stock
+# For Google Camera
 PRODUCT_COPY_FILES += \
-    device/google/raviole/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
+    device/google/raviole/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
+
+# wireless_charger HAL service
+include device/google/gs-common/wireless_charger/wireless_charger.mk
