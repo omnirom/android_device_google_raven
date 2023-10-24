@@ -39,6 +39,8 @@ BUILD_FINGERPRINT := google/raven/raven:13/TQ3A.230605.010.A1/10198712:user/rele
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+
 # for bringup to disable secure adb - copy adbkey.pub from ~/.android
 #PRODUCT_ADB_KEYS := device/google/raviole/adbkey.pub
 #PRODUCT_PACKAGES += \
@@ -63,3 +65,6 @@ PRODUCT_COPY_FILES += \
     device/google/raviole/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
 TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
+
+# wireless_charger HAL service
+include device/google/gs-common/wireless_charger/wireless_charger.mk
