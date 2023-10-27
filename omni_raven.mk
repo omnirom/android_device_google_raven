@@ -53,9 +53,9 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 PRODUCT_COPY_FILES += \
     device/google/raviole/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.google.android.euicc.xml
 
-# sysconfig from stock
+# For Google Camera
 PRODUCT_COPY_FILES += \
-    device/google/raviole/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
+    device/google/raviole/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
