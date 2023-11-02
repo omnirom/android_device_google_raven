@@ -26,12 +26,11 @@ $(call inherit-product, device/google/gs101/device-omni.mk)
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
 
 PRODUCT_NAME := omni_raven
-PRODUCT_SYSTEM_DEVICE := raven
-PRODUCT_SYSTEM_MODEL := Pixel 6 Pro
-PRODUCT_SYSTEM_NAME := raven
-PRODUCT_SYSTEM_MANUFACTURER := Google
+PRODUCT_MODEL := Pixel 6 Pro
+PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=oriole \
     PRIVATE_BUILD_DESC="raven-user 13 TQ3A.230605.010.A1 10198712 release-keys"
 
 # defined in vendor/google_devices/raven/proprietary/device-vendor.mk
