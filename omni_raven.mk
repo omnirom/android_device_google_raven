@@ -31,10 +31,10 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
-    PRIVATE_BUILD_DESC="raven-user 13 TQ3A.230605.010.A1 10198712 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 14 UP1A.231005.007 10754064 release-keys"
 
 # defined in vendor/google_devices/raven/proprietary/device-vendor.mk
-BUILD_FINGERPRINT := google/raven/raven:13/TQ3A.230605.010.A1/10198712:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:14/UP1A.231005.007/10754064:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -47,6 +47,10 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# HBM
+PRODUCT_COPY_FILES += \
+    device/google/raviole/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
 
 # euicc from stock
 PRODUCT_COPY_FILES += \
