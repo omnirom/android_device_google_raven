@@ -1,16 +1,2 @@
 [
-  {
-    "remote": "aosp",
-    "override": "platform/hardware/google/graphics/common",
-    "repository": "platform/hardware/google/graphics/common",
-    "target_path": "hardware/google/graphics/common",
-    "revision": "refs/tags/android-14.0.0_r2"
-  },
-  {
-    "remote": "aosp",
-    "override": "platform/hardware/google/graphics/gs101",
-    "repository": "platform/hardware/google/graphics/gs101",
-    "target_path": "hardware/google/graphics/gs101",
-    "revision": "refs/tags/android-14.0.0_r2"
-  }
 ]

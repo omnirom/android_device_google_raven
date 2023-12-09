@@ -31,10 +31,10 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
-    PRIVATE_BUILD_DESC="raven-user 14 UP1A.231005.007 10754064 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 14 UQ1A.231205.015 11084887 release-keys"
 
 # defined in vendor/google_devices/raven/proprietary/device-vendor.mk
-BUILD_FINGERPRINT := google/raven/raven:14/UP1A.231005.007/10754064:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:14/UQ1A.231205.015/11084887:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -55,6 +55,10 @@ PRODUCT_COPY_FILES += \
 # euicc from stock
 PRODUCT_COPY_FILES += \
     device/google/raviole/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.google.android.euicc.xml
+
+# Pixel Camera Services / Camera extensions
+PRODUCT_COPY_FILES += \
+    device/google/raviole/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
 
 # For Google Camera
 PRODUCT_COPY_FILES += \
