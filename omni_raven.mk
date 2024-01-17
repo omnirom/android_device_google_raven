@@ -48,6 +48,9 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
+
 # HBM
 PRODUCT_COPY_FILES += \
     device/google/raviole/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
