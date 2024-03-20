@@ -31,10 +31,10 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
-    PRIVATE_BUILD_DESC="raven-user 14 UQ1A.231205.015 11084887 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 14 AP1A.240305.019.A1 11445699 release-keys"
 
 # defined in vendor/google_devices/raven/proprietary/device-vendor.mk
-BUILD_FINGERPRINT := google/raven/raven:14/UQ1A.231205.015/11084887:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:14/AP1A.240305.019.A1/11445699:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
