@@ -30,7 +30,7 @@ PRODUCT_MODEL := Pixel 6
 PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-    BuildDesc=oriole-user[[:space:]]15[[:space:]]AP3A.241005.015[[:space:]]12366759[[:space:]]release-keys \
+    BuildDesc="oriole-user 15 AP3A.241005.015 12366759 release-keys" \
     BuildFingerprint=google/oriole/oriole:15/AP3A.241005.015/12366759:user/release-keys \
     DeviceProduct=oriole
 
