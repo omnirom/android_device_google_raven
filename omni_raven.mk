@@ -30,8 +30,8 @@ PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-    BuildDesc="raven-user 15 AP4A.241205.013 12621605 release-keys" \
-    BuildFingerprint=google/raven/raven:15/AP4A.241205.013/12621605:user/release-keys \
+    BuildDesc="raven-user 15 BP1A.250505.005 13277524 release-keys" \
+    BuildFingerprint=google/raven/raven:15/BP1A.250505.005/13277524:user/release-keys \
     DeviceProduct=raven
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
